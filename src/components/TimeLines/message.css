@@ -1,0 +1,56 @@
+.timelineContainer {
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+.timelineContainer.sent .timelineItemContent{
+    background-color:lightgrey;
+}
+
+.timelineContainer::after {
+    background-color: lightgrey;
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: calc(50% - 2px);
+}
+
+.timelineItem {
+    width:50%;
+    margin: 10px 0;
+    position : relative;
+    justify-content:flex-end;
+}
+
+.timelineItem:nth-child(odd) {
+    align-self:flex-end
+}
+
+.timelineItem:nth-child(odd) .messageContent {
+    flex-direction:row-reverse
+}
+
+.timelineItemContent {
+    border: 1px solid lightgrey;
+    padding:15px;
+}
+
+.timelineItem .circle {
+    position:absolute;
+    top: calc(50% - 10px);
+    right: -16px;
+}
+
+.timelineItem:nth-child(odd) .circle {
+    left: -19px;
+}
+
+.box {
+    padding:15px;
+}
+
+.timelineItemContent p {
+    font-size: 14px;
+    line-height: 24px;
+}
