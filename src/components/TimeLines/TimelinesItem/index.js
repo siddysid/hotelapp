@@ -41,7 +41,7 @@ const TimelineItem = ({ className, data, type }) => {
                         <p> {data.review} Star Review</p>
                         <p>{data.review_message}</p>
                     </div>
-                    <Box display="flex" bgcolor="lightgrey" border={1} borderColor="darkgrey" className ="box">
+                    <Box display={{ xs: 'block', sm: 'flex' }} bgcolor="lightgrey" border={1} borderColor="darkgrey" className ="box">
                          {type == 'sent' &&
                             <Box flexGrow = {1}>
                             <Box>Status</Box>
