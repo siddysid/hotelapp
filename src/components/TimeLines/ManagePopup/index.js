@@ -1,5 +1,4 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
 import Popover from '@material-ui/core/Popover';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -9,14 +8,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import BlockIcon from '@material-ui/icons/Block';
 import TelegramIcon from '@material-ui/icons/Telegram';
 
-const useStyles = makeStyles((theme) => ({
-    typography: {
-      padding: theme.spacing(2),
-    },
-  }));
-
 export default function ManagePopUp({ open, anchorEl, setAnchorEl}) {
-    const classes = useStyles()
     const handleClose = () => {
         setAnchorEl(null);
       };

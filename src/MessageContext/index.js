@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import axios from "axios"
 
 const MessageContext = React.createContext()
 
@@ -25,7 +24,7 @@ const MessageProvider = (props) => {
 						setMessage(data)
 						setLoading(false)
 					})
-		}, [])
+		})
 
 		return (
 			<MessageContext.Provider value ={{
